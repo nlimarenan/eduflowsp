@@ -7,7 +7,8 @@ import org.springframework.boot.test.context.SpringBootTest
 class EduflowspApplicationTests {
 
 	@Test
-	fun contextLoads() {
+	fun `it should receive http request and return processed data`() {
+
 	}
 
 }
