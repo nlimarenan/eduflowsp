@@ -17,11 +17,11 @@ Follow these steps to install and run the project locally:
 
 Clone the repository:
 
-    git clone https://github.com/yourusername/SchoolFlowSP.git
+    git clone https://github.com/nlimarenan/eduflowsp.git
 
 Enter the project folder:
 
-    cd SchoolFlowSP
+    cd eduflowsp
 
 Use Gradle to install the dependencies and run the project:
     
