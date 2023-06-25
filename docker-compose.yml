@@ -7,10 +7,18 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: 'root'
       MYSQL_DATABASE: 'eduflow'
-      MYSQL_USER: 'root'
-      MYSQL_USER_PASSWORD: 'eduflow'
+      MYSQL_USER: 'eduflow_user'
+      MYSQL_PASSWORD: 'eduflow'
     volumes:
       - db_data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
 
 volumes:
   db_data:
