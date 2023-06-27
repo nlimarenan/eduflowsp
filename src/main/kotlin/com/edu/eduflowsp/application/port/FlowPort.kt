@@ -5,8 +5,8 @@ import org.springframework.stereotype.Component
 
 @Component
 class FlowPort: FlowUseCase {
-    override fun getFlowBySchoolName(schoolName: String) {
-        TODO("Not yet implemented")
+    override fun getFlowBySchoolName(schoolName: String): String {
+        return schoolName
     }
 
 }
