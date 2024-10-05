@@ -1,1 +1,12 @@
+plugins {
+    id 'org.gradle.toolchains.foojay-resolver-convention' version '0.5.0'
+}
 rootProject.name = 'eduflowsp'
+
+include 'main'
+include 'domain'
+include 'secondary:postgres'
+findProject(':secondary:postgres')?.name = 'postgres'
+include 'primary:rest'
+findProject(':primary:rest')?.name = 'rest'
+

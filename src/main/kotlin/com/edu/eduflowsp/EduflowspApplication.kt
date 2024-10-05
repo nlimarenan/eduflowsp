@@ -12,7 +12,7 @@ fun main(args: Array<String>) {
 	runApplication<EduflowspApplication>(*args)
 
 	val flyway = Flyway.configure()
-		.dataSource("jdbc:mysql://localhost:3306/eduflow","root","root")
+		.dataSource("jdbc:postgresql://localhost:5432/eduflow","eduflow_user","eduflow_password")
 		.locations("classpath:db/migration")
 		.load()
 	flyway.migrate()
